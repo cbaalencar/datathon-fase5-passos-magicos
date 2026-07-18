@@ -1,0 +1,23 @@
+{
+  "alvo": "agravamento_defasagem_T_para_T1",
+  "num_features": [
+    "Defasagem",
+    "fase_num",
+    "IDA",
+    "IEG",
+    "IAA",
+    "IPS",
+    "IPV",
+    "IPP"
+  ],
+  "cat_features": [
+    "Genero_pad",
+    "rede"
+  ],
+  "modelo": "Random Forest",
+  "split": "por_RA",
+  "auc_cv": 0.87,
+  "estrategia_faixas": "base_rate",
+  "corte_medio": 0.214,
+  "corte_alto": 0.428
+}
