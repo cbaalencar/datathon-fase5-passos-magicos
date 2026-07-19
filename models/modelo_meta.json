@@ -1,0 +1,42 @@
+{
+  "alvo": "agravamento_defasagem_T_para_T1",
+  "num_features": [
+    "Defasagem",
+    "fase_num",
+    "IDA",
+    "IEG",
+    "IAA",
+    "IPS",
+    "IPV",
+    "IPP"
+  ],
+  "cat_features": [
+    "Genero_pad",
+    "rede"
+  ],
+  "modelo": "Random Forest",
+  "split": "por_RA",
+  "robustez_temporal": {
+    "auc_out_of_time": 0.792,
+    "baseline_trivial": 0.796,
+    "limiar_recalibrado_treino": 0.35,
+    "metricas_por_limiar": {
+      "limiar_principal_0.30": {
+        "acuracia": 0.811,
+        "balanced_accuracy": 0.619
+      },
+      "limiar_treino_temporal_0.35": {
+        "acuracia": 0.811,
+        "balanced_accuracy": 0.581
+      }
+    }
+  },
+  "sensibilidade_ipp": {
+    "auc_cv_por_RA_sem_ipp": 0.867,
+    "auc_temporal_sem_ipp": 0.813
+  },
+  "auc_cv": 0.867,
+  "estrategia_faixas": "base_rate",
+  "corte_medio": 0.211,
+  "corte_alto": 0.423
+}
